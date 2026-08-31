@@ -7,14 +7,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.sleepbench</groupId>
-        <artifactId>sleepbench</artifactId>
+        <groupId>com.sleepstageai</groupId>
+        <artifactId>sleepstage-ai</artifactId>
         <version>0.1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>identity-service</artifactId>
-    <name>SleepBench Identity Service</name>
+    <name>SleepStage AI Identity Service</name>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
