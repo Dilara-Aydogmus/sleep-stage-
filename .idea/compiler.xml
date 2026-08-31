@@ -6,17 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="experiment-service" />
-        <module name="identity-service" />
-        <module name="catalog-service" />
+        <module name="sleep-analysis-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="catalog-service" target="21" />
+      <module name="identity-service" target="21" />
+      <module name="sleepstage-backend" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="catalog-service" options="-parameters" />
-      <module name="experiment-service" options="-parameters" />
       <module name="identity-service" options="-parameters" />
+      <module name="sleep-analysis-service" options="-parameters" />
+      <module name="sleepstage-backend" options="-parameters" />
     </option>
   </component>
 </project>
