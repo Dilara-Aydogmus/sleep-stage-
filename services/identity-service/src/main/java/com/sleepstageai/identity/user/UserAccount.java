@@ -21,7 +21,7 @@ public class UserAccount {
     private boolean accountEnabled = true;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 20)
+    @Column(name = "account_role", nullable = false, length = 20)
     private UserRole currentRole = UserRole.USER;
 
     protected UserAccount(){

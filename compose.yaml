@@ -1,14 +1,14 @@
 services:
-  identity-db:
-    image: postgres:17-alpine
-    container_name: sleepbench-identity-db
+  identity-db: #container içindeki sleepbench_identity veritabanı
+    image: postgres:17-alpine #docker image: postgreSQL kurulumunun hazır şablonu
+    container_name: sleepbench-identity-db #bu şablondan çalışan hazır postgreSQL processi
     environment:
       POSTGRES_DB: sleepbench_identity
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ${IDENTITY_DB_PASSWORD:-postgres}
     ports:
       - "5432:5432"
-    volumes:
+    volumes: #verilerin container silinse bile kalmasını sağlayan alan
       - identity-db-data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d sleepbench_identity"]
