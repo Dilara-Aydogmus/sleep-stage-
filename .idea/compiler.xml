@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="identity-service" />
         <module name="sleep-analysis-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="catalog-service" target="21" />
-      <module name="identity-service" target="21" />
       <module name="sleepstage-backend" target="21" />
     </bytecodeTargetLevel>
   </component>
